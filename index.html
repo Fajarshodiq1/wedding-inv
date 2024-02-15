@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
     <script src="countdown/simplyCountdown.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <section
@@ -35,7 +36,13 @@
         <h1>Fajar & Deka</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#undagan" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg mt-4" id="lihatUndangan"
+          >Lihat Undangan</a
+        >
+        <audio
+          id="lagu"
+          src="music/Untitled video - Made with Clipchamp.mp4"
+        ></audio>
       </main>
     </section>
 
@@ -409,5 +416,18 @@
         styckyTop.style.overflow = "hidden";
       });
     </script>
+    <script>
+      document
+        .getElementById("lihatUndangan")
+        .addEventListener("click", function () {
+          var lagu = document.getElementById("lagu");
+          if (lagu.paused) {
+            lagu.play();
+          } else {
+            lagu.pause();
+          }
+        });
+    </script>
+    <script src="main.js"></script>
   </body>
 </html>
