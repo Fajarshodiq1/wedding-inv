@@ -43,10 +43,10 @@
           onclick="enableScroll()"
           >Lihat Undangan</a
         >
-        <audio
+        <!-- <audio
           id="lagu"
           src="music/Untitled video - Made with Clipchamp.mp4"
-        ></audio>
+        ></audio> -->
       </main>
     </section>
 
@@ -170,6 +170,15 @@
               Alamat: Lapas Cipinang <br />Jl.Bekasi TimurKec Cipinag Jakarta
               Timur
             </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.1846923053672!2d106.8832778!3d-6.2149204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f49fd4051b83%3A0xdf3c38254b05d57c!2sLembaga%20Pemasyarakatan%20Kelas%201%20Cipinang!5e0!3m2!1sid!2sid!4v1708072138737!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
             <a
               href="https://maps.app.goo.gl/JSn5Ate6nsFMX9rr7"
               target="_blank"
@@ -435,6 +444,37 @@
             <button class="btn btn-primary">Kirim</button>
           </div>
         </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://deka-wedding.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </div>
+        </div>
       </div>
     </section>
     <section id="gifts" class="gifts">
@@ -451,8 +491,7 @@
               <li class="list-group-item">
                 <div class="fw-bold">BCA</div>
                 <div
-                  onclick="copyToClipboard()"
-                  id="myText"
+                  onclick="copyToClipboard(this)"
                   style="color: blue; cursor: pointer; font-weight: 500"
                 >
                   <i class="bi bi-copy"></i> 12345678
@@ -462,8 +501,7 @@
               <li class="list-group-item">
                 <div class="fw-bold">Dana</div>
                 <div
-                  onclick="copyToClipboard()"
-                  id="myText"
+                  onclick="copyToClipboard(this)"
                   style="color: blue; cursor: pointer; font-weight: 500"
                 >
                   <i class="bi bi-copy"></i> 0881081867498
@@ -473,8 +511,7 @@
               <li class="list-group-item">
                 <div class="fw-bold">OVO</div>
                 <div
-                  onclick="copyToClipboard()"
-                  id="myText"
+                  onclick="copyToClipboard(this)"
                   style="color: blue; cursor: pointer; font-weight: 500"
                 >
                   <i class="bi bi-copy"></i> 085779110930
@@ -486,6 +523,67 @@
         </div>
       </div>
     </section>
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source
+          src="music/Kangen Band - Cinta Sampai Mati (Official Music Video).mp3"
+        />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+    <footer class="new_footer_area bg_color">
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget social-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.8s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.8s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                <div class="f_social_icon">
+                  <a href="#" class="bi bi-instagram"></a>
+                  <a href="#" class="bi bi-github"></a>
+                  <a href="#" class="bi bi-facebook"></a>
+                  <a href="#" class="bi bi-twitter"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-7">
+              <p class="mb-0 f_400">
+                © MamangCoding.. 2024 All rights reserved.
+              </p>
+            </div>
+            <div class="col-lg-6 col-sm-5 text-right">
+              <p>
+                Made with <i class="icon_heart"></i> in
+                <a href="http://cakecounter.com" target="_blank"
+                  >MamangCoding</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- countdown  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -523,19 +621,23 @@
       });
     </script>
     <script>
-      document
-        .getElementById("lihatUndangan")
-        .addEventListener("click", function () {
-          var lagu = document.getElementById("lagu");
-          if (lagu.paused) {
-            lagu.play();
-          } else {
-            lagu.pause();
-          }
-        });
+      // document
+      //   .getElementById("lihatUndangan")
+      //   .addEventListener("click", function () {
+      //     var lagu = document.getElementById("lagu");
+      //     if (lagu.paused) {
+      //       lagu.play();
+      //     } else {
+      //       lagu.pause();
+      //     }
+      //   });
     </script>
     <script>
       const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const song = document.querySelector("#song");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      let isPlaying = false;
       function disableScroll() {
         const scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
@@ -552,7 +654,30 @@
       function enableScroll() {
         window.onscroll = function () {};
         rootElement.style.scrollBehavior = "smooth";
+        playAudio();
       }
+
+      function playAudio() {
+        song.volume = 0.4;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+        isPlaying = !isPlaying;
+      };
+
+      disableScroll();
     </script>
     <script>
       window.addEventListener("load", function () {
@@ -571,8 +696,8 @@
       });
     </script>
     <script>
-      function copyToClipboard() {
-        var copyText = document.getElementById("myText");
+      function copyToClipboard(element) {
+        var copyText = element;
         var textArea = document.createElement("textarea");
 
         // Set nilai textarea dengan teks yang akan disalin
