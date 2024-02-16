@@ -76,7 +76,7 @@ body {
 }
 
 .home {
-  background-image: url(img/Untitled\ design2.png);
+  background-image: url(img/11791466_4728244.jpg);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6.5rem;
@@ -102,11 +102,15 @@ body {
 }
 .home p {
   font-size: 1.1rem;
-  color: #666;
+  color: #252424;
 }
-.home h3,
-.home p {
-  color: rgb(255, 255, 255);
+.home h4,
+.home p,
+.home h3 {
+  color: #3e3939;
+  /* text-shadow: var(--shadow); */
+}
+.home h3 {
   text-shadow: var(--shadow);
 }
 
@@ -203,7 +207,7 @@ body {
   bottom: 0;
   position: absolute;
   width: 2px;
-  background-color: #999;
+  background-color: #fefefe;
   left: 50%;
 }
 
