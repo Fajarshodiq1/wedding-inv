@@ -514,13 +514,13 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
-  background: url("https://media.tenor.com/cVO1v9Z9crwAAAAi/sportsmanias-animated-emojis.gif")
+  background: url("https://media.tenor.com/cVO1v9Z9crwAAAAi/sportsmanias-animated-emojis.")
     no-repeat center center;
   width: 120px;
   height: 100px;
   background-size: 100%;
   bottom: 0;
-  left: 80%;
+  left: 70%;
   position: absolute;
 }
 .new_footer_top .footer_bg .footer_bg_tree {
@@ -531,10 +531,20 @@ h6 {
   background-size: 100%;
   bottom: 0;
   top: 40%;
-  left: 85%;
+  left: 75%;
   position: absolute;
 }
-
+.home .animate_gif {
+  background: url("https://media.tenor.com/1hRGGW9CsNMAAAAi/green-balloon.gif")
+    no-repeat center center;
+  width: 40px;
+  height: 100px;
+  background-size: 100%;
+  bottom: 0;
+  top: 40%;
+  left: 75%;
+  position: absolute;
+}
 @-moz-keyframes myfirst {
   0% {
     left: -25%;

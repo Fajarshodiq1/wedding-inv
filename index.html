@@ -156,6 +156,7 @@
                   Ibu Srimulyani
                 </p>
               </div>
+              <div class="animate_gif"></div>
             </div>
           </div>
         </div>
@@ -632,51 +633,51 @@
       //   });
     </script>
     <script>
-      // const rootElement = document.querySelector(":root");
-      // const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
-      // const song = document.querySelector("#song");
-      // const audioIcon = document.querySelector(".audio-icon-wrapper i");
-      // let isPlaying = false;
-      // function disableScroll() {
-      //   const scrollTop =
-      //     window.pageYOffset || document.documentElement.scrollTop;
-      //   const scrollLeft =
-      //     window.pageYOffset || document.documentElement.scrollLeft;
-      //   window.onscroll = function () {
-      //     window.scrollTo(scrollTop, scrollLeft);
-      //   };
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const song = document.querySelector("#song");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      let isPlaying = false;
+      function disableScroll() {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft =
+          window.pageYOffset || document.documentElement.scrollLeft;
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
 
-      //   rootElement.style.scrollBehavior = "auto";
-      // }
-      // disableScroll();
+        rootElement.style.scrollBehavior = "auto";
+      }
+      disableScroll();
 
-      // function enableScroll() {
-      //   window.onscroll = function () {};
-      //   rootElement.style.scrollBehavior = "smooth";
-      //   playAudio();
-      // }
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        playAudio();
+      }
 
-      // function playAudio() {
-      //   song.volume = 0.4;
-      //   audioIconWrapper.style.display = "flex";
-      //   song.play();
-      //   isPlaying = true;
-      // }
+      function playAudio() {
+        song.volume = 0.4;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
 
-      // audioIconWrapper.onclick = function () {
-      //   if (isPlaying) {
-      //     song.pause();
-      //     audioIcon.classList.remove("bi-disc");
-      //     audioIcon.classList.add("bi-pause-circle");
-      //   } else {
-      //     song.play();
-      //     audioIcon.classList.add("bi-disc");
-      //     audioIcon.classList.remove("bi-pause-circle");
-      //   }
-      //   isPlaying = !isPlaying;
-      // };
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+        isPlaying = !isPlaying;
+      };
 
-      // disableScroll();
+      disableScroll();
     </script>
     <script>
       window.addEventListener("load", function () {
